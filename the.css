@@ -1,0 +1,84 @@
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header {
+    text-align: center;
+    background: #181818;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    padding: 32px;
+}
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 24px;
+}
+.img {
+    text-align: center;
+    margin-bottom: 32px;
+}
+.details-box {
+    display: flex;
+    gap: 40px;
+    background: #181818;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    padding: 32px;
+}
+.details-left {
+    flex: 1;
+    min-width: 220px;
+}
+.details-right {
+    flex: 2;
+}
+.details-left h2,
+.details-right h2 {
+    color: #fff;
+    margin-bottom: 18px;
+    font-size: 22px;
+}
+.details-left table {
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    border-collapse: collapse;
+}
+.details-left td {
+    padding: 8px 0;
+    vertical-align: top;
+}
+.details-left td:first-child {
+    color: #aaa;
+    font-weight: bold;
+    width: 120px;
+}
+.details-left td:last-child {
+    color: #fff;
+}
+.details-right p {
+    margin-bottom: 16px;
+    line-height: 1.7;
+    color: #eaeaea;
+}
+.button-buy {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 18px;
+    transition: background 0.2s;
+    display: inline-block;
+}
+.button-buy:hover {
+    background: #357abd;
+}
+.button-buy a {
+    color: white;
+    text-decoration: none;
+}

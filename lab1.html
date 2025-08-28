@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab1</title>
+    <link rel="stylesheet" href="lab01.css">
+</head>
+<body>
+    <div class="table-container">
+        <table class="score-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>สโมสร</th>
+                    <th>แข่ง</th>
+                    <th>ชนะ</th>
+                    <th>เสมอ</th>
+                    <th>แพ้</th>
+                    <th>ได้</th>
+                    <th>เสีย</th>
+                    <th>ต่าง</th>
+                    <th>แต้ม</th>
+                    <th class="recent">5 นัดล่าสุด</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="club"><img src="https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg" class="club-logo"> อาร์เซนอล</td>
+                    <td>19</td>
+                    <td>16</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>45</td>
+                    <td>16</td>
+                    <td>29</td>
+                    <td>50</td>
+                    <td>
+                        <span class="win">●</span>
+                        <span class="win">●</span>
+                        <span class="draw">●</span>
+                        <span class="win">●</span>
+                        <span class="win">●</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="club"><img src="https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg" class="club-logo"> แมนซิตี้</td>
+                    <td>20</td>
+                    <td>14</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>53</td>
+                    <td>20</td>
+                    <td>33</td>
+                    <td>45</td>
+                    <td>
+                        <span class="lose">●</span>
+                        <span class="win">●</span>
+                        <span class="win">●</span>
+                        <span class="win">●</span>
+                        <span class="win">●</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="club"><img src="https://upload.wikimedia.org/wikipedia/en/5/56/Newcastle_United_Logo.svg" class="club-logo"> นิวคาสเซิล</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>9</td>
+                    <td>1</td>
+                    <td>33</td>
+                    <td>11</td>
+                    <td>22</td>
+                    <td>39</td>
+                    <td>
+                        <span class="draw">●</span>
+                        <span class="draw">●</span>
+                        <span class="win">●</span>
+                        <span class="win">●</span>
+                        <span class="win">●</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="club"><img src="https://tse3.mm.bing.net/th/id/OIP.6yVZLplMFQQxqN8cY29YfAHaHk?cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3" class="club-logo"> แมนยู</td>
+                    <td>20</td>
+                    <td>12</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>32</td>
+                    <td>25</td>
+                    <td>7</td>
+                    <td>39</td>
+                    <td>
+                        <span class="lose">●</span>
+                        <span class="win">●</span>
+                        <span class="win">●</span>
+                        <span class="win">●</span>
+                        <span class="win">●</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="club"><img src="https://upload.wikimedia.org/wikipedia/en/b/b4/Tottenham_Hotspur.svg" class="club-logo"> สเปอร์ส</td>
+                    <td>21</td>
+                    <td>11</td>
+                    <td>3</td>
+                    <td>7</td>
+                    <td>40</td>
+                    <td>31</td>
+                    <td>9</td>
+                    <td>36</td>
+                    <td>
+                        <span class="win">●</span>
+                        <span class="win">●</span>
+                        <span class="draw">●</span>
+                        <span class="win">●</span>
+                        <span class="win">●</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="club"><img src="https://upload.wikimedia.org/wikipedia/en/f/fd/Brighton_%26_Hove_Albion_logo.svg" class="club-logo">ไบร์ตัน</td>
+                    <td>19</td>
+                    <td>9</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>37</td>
+                    <td>27</td>
+                    <td>10</td>
+                    <td>31</td>
+                    <td>
+                        <span class="draw">●</span>
+                        <span class="win">●</span>
+                        <span class="win">●</span>
+                        <span class="lose">●</span>
+                        <span class="win">●</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td class="club"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Fulham_FC_%28shield%29.svg/320px-Fulham_FC_%28shield%29.svg.png" class="club-logo">ฟูลัม</td>
+                    <td>21</td>
+                    <td>9</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>32</td>
+                    <td>30</td>
+                    <td>2</td>
+                    <td>31</td>
+                    <td>
+                        <span class="lose">●</span>
+                        <span class="lose">●</span>
+                        <span class="win">●</span>
+                        <span class="win">●</span>
+                        <span class="win">●</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td class="club"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Brentford_FC_crest.svg/300px-Brentford_FC_crest.svg.png" class="club-logo">เบรนท์ฟอร์ด</td>
+                    <td>20</td>
+                    <td>7</td>
+                    <td>9</td>
+                    <td>4</td>
+                    <td>32</td>
+                    <td>28</td>
+                    <td>4</td>
+                    <td>30</td>
+                    <td>
+                        <span class="draw">●</span>
+                        <span class="win">●</span>
+                        <span class="win">●</span>
+                        <span class="win">●</span>
+                        <span class="draw">●</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td class="club"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/300px-Liverpool_FC.svg.png" class="club-logo">ลิเวอร์พูล</td>
+                    <td>19</td>
+                    <td>8</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>34</td>
+                    <td>25</td>
+                    <td>9</td>
+                    <td>29</td>
+                    <td>
+                        <span class="draw">●</span>
+                        <span class="lose">●</span>
+                        <span class="lose">●</span>
+                        <span class="win">●</span>
+                        <span class="win">●</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="club"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/323px-Chelsea_FC.svg.png" class="club-logo">เชลซี</td>
+                    <td>20</td>
+                    <td>8</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>22</td>
+                    <td>21</td>
+                    <td>1</td>
+                    <td>29</td>
+                    <td>
+                        <span class="draw">●</span>
+                        <span class="win">●</span>
+                        <span class="lose">●</span>
+                        <span class="lose">●</span>
+                        <span class="draw">●</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td class="club"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Aston_Villa_FC_new_crest.svg/320px-Aston_Villa_FC_new_crest.svg.png" class="club-logo">แอสตันวิลลา</td>
+                    <td>20</td>
+                    <td>8</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>23</td>
+                    <td>27</td>
+                    <td>-4</td>
+                    <td>28</td>
+                    <td>
+                        <span class="win">●</span>
+                        <span class="win">●</span>
+                        <span class="draw">●</span>
+                        <span class="win">●</span>
+                        <span class="lose">●</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td class="club"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/Crystal_Palace_FC_logo_%282022%29.svg/278px-Crystal_Palace_FC_logo_%282022%29.svg.png" class="club-logo">คริสตัลพาเลซ</td>
+                    <td>20</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>8</td>
+                    <td>18</td>
+                    <td>27</td>
+                    <td>-9</td>
+                    <td>24</td>
+                    <td>
+                        <span class="draw">●</span>
+                        <span class="draw">●</span>
+                        <span class="lose">●</span>
+                        <span class="lose">●</span>
+                        <span class="win">●</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td class="club"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Nottingham_Forest_F.C._logo.svg/180px-Nottingham_Forest_F.C._logo.svg.png" class="club-logo">ฟอเรสต์</td>
+                    <td>20</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>9</td>
+                    <td>16</td>
+                    <td>35</td>
+                    <td>-19</td>
+                    <td>21</td>
+                    <td>
+                        <span class="draw">●</span>
+                        <span class="win">●</span>
+                        <span class="win">●</span>
+                        <span class="draw">●</span>
+                        <span class="lose">●</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td class="club"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/Leicester_City_crest.svg/300px-Leicester_City_crest.svg.png" class="club-logo">เลสเตอร์</td>
+                    <td>20</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>12</td>
+                    <td>28</td>
+                    <td>35</td>
+                    <td>-7</td>
+                    <td>18</td>
+                    <td>
+                        <span class="draw">●</span>
+                        <span class="lose">●</span>
+                        <span class="lose">●</span>
+                        <span class="lose">●</span>
+                        <span class="lose">●</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td class="club"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/54/Leeds_United_F.C._logo.svg/255px-Leeds_United_F.C._logo.svg.png" class="club-logo">ลีดส์</td>
+                    <td>19</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>9</td>
+                    <td>26</td>
+                    <td>33</td>
+                    <td>-7</td>
+                    <td>18</td>
+                    <td>
+                        <span class="draw">●</span>
+                        <span class="lose">●</span>
+                        <span class="draw">●</span>
+                        <span class="draw">●</span>
+                        <span class="lose">●</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td class="club"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/West_Ham_United_FC_logo.svg/278px-West_Ham_United_FC_logo.svg.png" class="club-logo">เวสต์แฮม</td>
+                    <td>20</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>12</td>
+                    <td>17</td>
+                    <td>25</td>
+                    <td>-8</td>
+                    <td>18</td>
+                    <td>
+                        <span class="win">●</span>
+                        <span class="lose">●</span>
+                        <span class="draw">●</span>
+                        <span class="lose">●</span>
+                        <span class="lose">●</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td class="club"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Wolverhampton_Wanderers_FC_crest.svg/330px-Wolverhampton_Wanderers_FC_crest.svg.png" class="club-logo">วูล์ฟแฮมป์ตัน</td>
+                    <td>20</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>30</td>
+                    <td>-18</td>
+                    <td>17</td>
+                    <td>
+                        <span class="lose">●</span>
+                        <span class="win">●</span>
+                        <span class="draw">●</span>
+                        <span class="lose">●</span>
+                        <span class="win">●</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td class="club"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/AFC_Bournemouth_%282013%29.svg/240px-AFC_Bournemouth_%282013%29.svg.png" class="club-logo">บอร์นมัธ</td>
+                    <td>20</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>11</td>
+                    <td>19</td>
+                    <td>42</td>
+                    <td>-23</td>
+                    <td>17</td>
+                    <td>
+                        <span class="draw">●</span>
+                        <span class="lose">●</span>
+                        <span class="lose">●</span>
+                        <span class="lose">●</span>
+                        <span class="lose">●</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td class="club"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Everton_FC_logo.svg/315px-Everton_FC_logo.svg.png" class="club-logo">เอฟเวอร์ตัน</td>
+                    <td>20</td>
+                    <td>3</td>
+                    <td>6</td>
+                    <td>11</td>
+                    <td>15</td>
+                    <td>28</td>
+                    <td>-13</td>
+                    <td>15</td>
+                    <td>
+                        <span class="lose">●</span>
+                        <span class="lose">●</span>
+                        <span class="lose">●</span>
+                        <span class="draw">●</span>
+                        <span class="lose">●</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td class="club"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/FC_Southampton.svg/300px-FC_Southampton.svg.png" class="club-logo">เซาแธมป์ตัน</td>
+                    <td>20</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>13</td>
+                    <td>17</td>
+                    <td>35</td>
+                    <td>-18</td>
+                    <td>15</td>
+                    <td>
+                        <span class="lose">●</span>
+                        <span class="win">●</span>
+                        <span class="lose">●</span>
+                        <span class="lose">●</span>
+                        <span class="lose">●</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

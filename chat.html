@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DNA Border Circles</title>
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #0e0e1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    width: 500px;
+    height: 300px;
+}
+
+/* กล่อง Login */
+.login {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+    padding: 20px;
+    z-index: 10;
+    position: relative;
+    text-align: center;
+}
+.login h1 {
+    margin-bottom: 20px;
+}
+.login input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.login button {
+    margin-top: 15px;
+    padding: 8px 15px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.login button:hover {
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+}
+
+/* วงกลมแบบเส้นขอบ */
+.ring {
+    position: absolute;
+    border: 2px solid;
+    border-radius: 50%;
+    animation: spin 6s linear infinite;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+}
+
+.r1 {
+    width: 550px;
+    height: 350px;
+    border-color: #ff9a9e;
+    animation-delay: 0s;
+}
+.r2 {
+    width: 520px;
+    height: 320px;
+    border-color: #a18cd1;
+    animation-delay: 1s;
+}
+.r3 {
+    width: 490px;
+    height: 290px;
+    border-color: #84fab0;
+    animation-delay: 2s;
+}
+.r4 {
+    width: 460px;
+    height: 260px;
+    border-color: #f6d365;
+    animation-delay: 3s;
+}
+.r5 {
+    width: 430px;
+    height: 230px;
+    border-color: #fda085;
+    animation-delay: 4s;
+}
+
+@keyframes spin {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <!-- เส้นขอบวงกลมหมุน -->
+        <div class="ring r1"></div>
+        <div class="ring r2"></div>
+        <div class="ring r3"></div>
+        <div class="ring r4"></div>
+        <div class="ring r5"></div>
+
+        <!-- กล่อง Login -->
+        <div class="login">
+            <h1>Login</h1>
+            <p>Username : <input type="text" placeholder="Enter your username"></p>
+            <p>Password : <input type="password" placeholder="Enter your password"></p>
+            <button>Login</button>
+        </div>
+    </div>
+</body>
+</html>
